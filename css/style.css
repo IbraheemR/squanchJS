@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFD;                              /*color*/
+    background-color: #111;                              /*bg-color*/
+
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-areas:
+    "nav nav nav"
+    "person text inv"
+    "prompt prompt inv"
+    "input input input";
+
+}
+
+body > * {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    border: 2px solid #333;                                        /*border color*/
+
+    font-size: 120%;
+}
+
+nav {
+    height: 7vh;
+
+    grid-area: nav;
+}
+
+.person {
+    width: 6vw;
+
+    padding-right: 2;
+    border-right: none;
+
+    grid-area: person;
+
+    text-align: right;
+}
+
+.text {
+    width: 74vw;
+
+    padding-left: 0;
+    border-left: none;
+
+    grid-area: text;
+}
+
+.prompt {
+    height: 5vh;
+
+    padding: 5px;
+
+    grid-area: prompt;
+}
+
+.inv {
+    height: 100vh;
+    width: 20vw;
+
+    grid-area: inv;
+}
+
+.input {
+    grid-area: input;
+}
+
+
+cr {  /* cred */
+    color: #B24035;
+}
+co { /*  orange */
+    color: #CC793F;
+}
+cy { /*  yellow */
+    color: #CCBD3F;
+}
+cg { /*  green */
+    color: #20B20D;
+}
+cc { /*  cyan */
+    color: #0FB2A8;
+}
+cb { /*  blue */
+    color: #3F5ACC;
+}
+cp { /*  purple */
+    color: #802FB2;
+}
+cm { /*  magenta */
+    color: #C73FCC;
+}
+cd { /*  dirt */
+    color: #6E3B0B;
+}
+cs { /*  silver */
+    color: #888;
+}
